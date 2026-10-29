@@ -1,0 +1,18 @@
+Verification record: 2026-10-29
+Lean toolchain: 4.34.0
+
+Commands
+  lake build
+  python3 scripts/check_axioms.py
+
+Results
+  Build completed successfully (3358 jobs).
+  Checked 525 Lean source modules.
+  Audited 2786 project theorems, including private helpers.
+  No sorry, admit, sorryAx, custom axiom or unsafe declarations in Lean sources.
+
+Main theorem axiom dependencies
+  OnlineSteinerForest.upper_bound: propext, Classical.choice, Quot.sound
+  OnlineSteinerForest.lower_bound: propext, Classical.choice, Quot.sound
+
+All audited theorem dependencies use only these three standard Lean axioms.
